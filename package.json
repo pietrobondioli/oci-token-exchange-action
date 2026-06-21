@@ -39,7 +39,7 @@
         "package": "npx ncc build src/index.ts -o dist --source-map --license LICENSE.txt",
         "all": "npm run format:write && npm run lint && npm run package",
         "test": "jest",
-        "build:cli": "ncc build src/cli.ts -o dist --source-map --license licenses.txt --target node20",
+        "build:cli": "ncc build src/cli.ts -o dist --source-map --license licenses.txt --target node24",
         "package:cli": "npm run build:cli && npm pack",
         "prepare": "husky install",
         "release": "semantic-release",
